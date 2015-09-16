@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:id="@+id/play_linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:orientation="horizontal"
+        android:background="#00BFFF"> 
+     <ImageButton 
+         android:id="@+id/play_linear1_ig1"
+         android:layout_height="match_parent"
+         android:layout_width="wrap_content"
+         android:background="@drawable/back"/>  
+         
+     <TextView 
+         android:id="@+id/play_linear1_text1"
+         android:layout_height="match_parent"
+         android:layout_width="match_parent"
+         android:layout_weight="1"
+         android:gravity="center"
+         android:singleLine="true"
+         android:textColor="#ffffff"
+         android:textSize="25dp"
+         android:text="音乐名字"
+         android:paddingRight="38dp"/>        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/play_linear2"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+     <RelativeLayout 
+         android:id="@+id/tanmu_container"
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:layout_weight="1"
+         android:scaleType="fitXY"
+         >
+          <ImageButton 
+         android:id="@+id/startTanmu"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:scaleType="fitXY"
+         android:background="@drawable/love"
+        />
+         
+     </RelativeLayout>
+     <LinearLayout 
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+          android:background="#00BFFF">
+          
+          <EditText 
+         android:id="@+id/tanmuText"
+         android:layout_width="250dp"
+         android:layout_height="wrap_content"
+          android:background="#eeeeee"
+          android:singleLine="true"
+        />
+          
+          <Button 
+              android:id="@+id/sendTanmu"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="发送"/>
+         
+         
+     </LinearLayout>
+    
+     
+     <RelativeLayout 
+         android:id="@+id/play_linear2_relative1"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:background="#00BFFF">
+          
+           <SeekBar
+              android:id="@+id/play_seekBar1"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              
+              android:thumb="@drawable/playing_slider_thumb" />
+         
+         <TextView 
+             android:id="@+id/textView1s"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_below="@id/play_seekBar1"
+             android:textColor="#ffffff"
+             android:paddingLeft="10dp"
+             android:text="0:00"
+             />
+         
+          <TextView
+		        android:id="@+id/textView2s"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@id/play_seekBar1"
+		        android:layout_alignParentRight="true"
+		        android:textColor="#ffffff"
+		        android:paddingRight="10dp"
+		        android:text="0:00" />
+
+        
+         
+     </RelativeLayout>    
+        
+    </LinearLayout>
+    
+    
+    <LinearLayout 
+        android:id="@+id/play_linear3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="#00BFFF">
+     
+       <ImageView
+            android:id="@+id/play_linear3_img1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/pa_prv" />
+
+        <ToggleButton
+            android:id="@+id/play_linear3_toggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textOff=""
+            android:textOn=""
+            android:background="@drawable/tooglebutton" />
+
+        <ImageView
+            android:id="@+id/play_linear3_img3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/pa_next" />
+        
+    </LinearLayout>
+    
+    
+    
+
+</LinearLayout>
